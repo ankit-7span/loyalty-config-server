@@ -1,7 +1,6 @@
 server:
   port: 9296
 
-
 spring:
   application:
     name: CONFIG-SERVER
@@ -9,13 +8,12 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/ankit-7span/Loyalty-Service-Config/tree/spring-security
+          uri: https://github.com/ankit-7span/Loyalty-Service-Config
           clone-on-start: true
 
 eureka:
   instance:
     prefer-ip-address: true
-  client:
     fetch-registry: true
     register-with-eureka: true
     service-url:
